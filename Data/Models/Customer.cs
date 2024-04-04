@@ -5,7 +5,7 @@ namespace ExcerciseEF.Data.Models
     public class Customer
     {
         [Key, Required, StringLength(100)]
-        public int CustomerID { get; set; }
+        public string CustomerID { get; set; }
 
         public string FirstName { get; set; }
 
@@ -18,5 +18,7 @@ namespace ExcerciseEF.Data.Models
         public string Username { get; set; }
 
         public string Password { get; set; }
+
+        public virtual Account Account { get; set; }
     }
 }

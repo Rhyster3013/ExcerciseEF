@@ -5,7 +5,7 @@ namespace ExcerciseEF.Data.Models
     public class Transaction
     {
         [Required, StringLength(100)]
-        public int TransactionId { get; set; }
+        public string TransactionId { get; set; }
 
         public string TransactionName { get; set; }
 
